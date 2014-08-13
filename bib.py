@@ -44,13 +44,6 @@ def main():
     
     html = br.response().get_data()
 
-    #print html
-
-    #print br.find_control(name="id_codigoreduzido_anteriorPendente").value
-
-
-   
-
     soup = BeautifulSoup(html)
     # use this (gets all <td> elements)
 

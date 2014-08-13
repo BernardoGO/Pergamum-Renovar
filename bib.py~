@@ -39,7 +39,6 @@ def main():
 
     #/pergamum/biblioteca_s/meu_pergamum/index.php?flag=&rs=ajax_renova&rst=&rsrnd=1415146730300&rsargs[]=2131667&rsargs[]=1&rsargs[]=1&rsargs[]=90340879
 
-    # Login
     br.submit()
 
     
