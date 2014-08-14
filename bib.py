@@ -49,7 +49,6 @@ def main():
 
     codigoreduzido = soup.find('input', {'id': 'id_codigoreduzido_anteriorPendente'}).get('value')
     #print value txt_cinza
-    #href="javascript:renova('141259','1','1')"
     final=soup.findAll('a', {'class':'txt_azul'})
 
     nome = soup.find('div', {'id': 'nome'}).find('strong').text
