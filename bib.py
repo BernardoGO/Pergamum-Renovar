@@ -45,7 +45,6 @@ def main():
     html = br.response().get_data()
 
     soup = BeautifulSoup(html)
-    # use this (gets all <td> elements)
 
     codigoreduzido = soup.find('input', {'id': 'id_codigoreduzido_anteriorPendente'}).get('value')
     #print value txt_cinza
