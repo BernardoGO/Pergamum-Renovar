@@ -34,10 +34,6 @@ def main():
     # User credentials
     br.form['login'] = Usuario
     br.form['password'] = Senha
-    
-    #'2131667','1','1' 90340879
-
-    #/pergamum/biblioteca_s/meu_pergamum/index.php?flag=&rs=ajax_renova&rst=&rsrnd=1415146730300&rsargs[]=2131667&rsargs[]=1&rsargs[]=1&rsargs[]=90340879
 
     br.submit()
 
