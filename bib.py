@@ -23,10 +23,7 @@ def main():
     br.set_handle_redirect(True)
     br.set_handle_referer(True)
     br.set_handle_robots(False)
-    br.set_handle_equiv(True)
-    br.set_handle_redirect(True)
-    br.set_handle_referer(True)
-    br.set_handle_robots(False)
+
     br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 
     r= br.open('http://bib.pucminas.br/pergamum/biblioteca_s/php/login_usu.php')
@@ -46,7 +43,7 @@ def main():
     soup = BeautifulSoup(html)
 
     codigoreduzido = soup.find('input', {'id': 'id_codigoreduzido_anteriorPendente'}).get('value')
-    #print value txt_cinza
+
     final=soup.findAll('a', {'class':'txt_azul'})
 
     nome = soup.find('div', {'id': 'nome'}).find('strong').text
