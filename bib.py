@@ -50,7 +50,6 @@ def main():
     print nome
     d = datetime.utcnow()
     for_js = int(time.mktime(d.timetuple())) * 1000
-    #print for_js
 
     for x in final:
         strin = str(x.get('href')).replace("javascript:renova", "").replace("(", "").replace(")", "").replace("\'", "")
